@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula01</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h3 id = "texto"> </h3>
+    <button onclick="darBundinha()">Dar bundinha!</button>
+         
+            <hr>
+            <INPUT type="number" id="txtValor" />
+            <button onclick="gerar()">Gerar</button>
+            <div id="divValores"></div>
+    <script>
+        
+        function gerar(){
+            valor = document.getElementById("txtValor").value;
+            if (isNaN(valor)){
+                alert("Que vontade de dancar")
+            }else if(valor <= 0){
+                 alert("So pode maior")
+            }else{
+                numeros = " "
+                for(i = 1; i <= valor; i++){
+                numeros += i + "<br>"
+                }    
+                var minhaDiv = document.getElementById("divValores")
+                minhaDiv.innerHTML = numeros
+                minhaDiv.style.background = "red"
+            }
+        }
+    
+        function darBundinha(){
+            document.getElementById("texto").innerHTML = "Bundiha <u>safadinha</u>"
+        }
+    </script>
+</body>
+</html>
