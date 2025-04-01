@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Mensagem de Sucesso</title>
+ 
+ 
+                                 <!--   CSS   -->
     <style>
         .success-message {
             display: none;
             color: green;
         }
     </style>
+                                 <!--   CSS   -->
 </head>
 <body>
     <form id="myForm">
@@ -16,6 +20,9 @@
         <button type="submit">Enviar</button>
     </form>
     <div class="success-message" id="successMessage">Formulário enviado com sucesso!</div>
+
+
+                                    <!--   JAVASCRIPT   -->
 
     <script>
         const form = document.getElementById('myForm');
@@ -26,5 +33,9 @@
             successMessage.style.display = 'block';
         });
     </script>
+
+                                   <!--   JAVASCRIPT   -->
+
+
 </body>
 </html>

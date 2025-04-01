@@ -7,7 +7,6 @@
         .progress-bar {
             width: 100%;
             background-color: #f3f3f3;
-
         }
         .progress {
             width: 0%;
@@ -19,7 +18,7 @@
 <body>
     <div class="progress-bar">
         <div class="progress" id="progress"></div>
-    </div>
+        <div class="success-message" id="successMessage">Formulário enviado com sucesso!</div>
 
     <script>
         function updateProgressBar(percentage) {
@@ -33,7 +32,7 @@
             if (progress >= 100) {
                 clearInterval(interval);
             } else {
-                progress += 8.5;
+                progress += 10;
                 updateProgressBar(progress);
             }
         }, 1000);
