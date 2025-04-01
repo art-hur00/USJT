@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Barra de Progresso</title>
+    <style>
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+
+        }
+        .progress {
+            width: 0%;
+            height: 30px;
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <script>
+        function updateProgressBar(percentage) {
+            const progressBar = document.getElementById('progress');
+            progressBar.style.width = percentage + '%';
+        }
+
+        // Simular progresso
+        let progress = 0;
+        const interval = setInterval(() => {
+            if (progress >= 100) {
+                clearInterval(interval);
+            } else {
+                progress += 8.5;
+                updateProgressBar(progress);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

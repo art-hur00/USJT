@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagem de Sucesso</title>
+    <style>
+        .success-message {
+            display: none;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" name="name" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="success-message" id="successMessage">Formulário enviado com sucesso!</div>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            successMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
