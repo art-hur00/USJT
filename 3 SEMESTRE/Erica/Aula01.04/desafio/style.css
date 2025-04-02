@@ -1,13 +1,4 @@
-.barraDeCarregamento{
-        width: 100%;
-        background-color: #f3f3f3;
-    }
-    .progress {
-        width: 0%;
-        height: 30px;
-        background-color: #4caf50;
-    }
-    .mensagem{
-        display: none;
-        color: green;
-    }
+.respMensagem{
+    display: none;
+    color: green;
+}
