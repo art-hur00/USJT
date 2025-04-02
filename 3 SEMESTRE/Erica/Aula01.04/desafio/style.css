@@ -2,3 +2,12 @@
     display: none;
     color: green;
 }
+.barraDeCarregamento{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+.carregamento{
+    width: 0%;
+    height: 30px;
+    background-color: #4caf50;
+}
