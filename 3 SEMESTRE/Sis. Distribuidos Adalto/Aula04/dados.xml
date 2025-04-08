@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <carro>
+        <marca>Volkswagen</marca>
+        <modelo>Gol</modelo>
+        <ano>1995</ano>
+        <motor>Ap 1.8</motor>
+        <automatico>FALSE</automatico>
+        <cores>
+             <cor>Azul-Haiti</cor>
+             <cor>Preto</cor>
+        </cores>
+        <opscionais>
+            <opscional>Trava elétrica</opscional>
+            <opscional>Vidros elétricos</opscional>
+        </opscionais>
+    </carro>
+    
