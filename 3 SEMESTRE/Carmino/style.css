@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: #ffffff;
+    font-family: sans-serif;
+
+}
+.Barra{
+    background-color: #0a35f1; 
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+}
+.Titulo-Pagina{
+    text-decoration: none;
+    position: absolute;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#Logo{
+  background-color: #afafaf;  
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 40px;
+  font-size: 16px;
+  margin: 1%;
+}
+#Enviar{
+    margin-top: 30px;
+    background: linear-gradient(to right, #5f2eea, #4f4ce5);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 16px 15px;
+    border: none;
+    width: 90%;
+    font-size: 16px;
+    cursor: pointer;
+}
+.Caixa-Azul{
+   background-color: #2694e2;
+   border-radius: 100px;
+   width: 500px;
+   margin: 120px auto;
+   padding: 12px 80px 80px 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.email-caixa{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.senha-caixa {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 34px;
+}
+label {
+    display: block;
+    font-size: 30px;
+    margin-top: 34px;
+    margin-bottom: 8px;
+    color: #4b4b4b;
+    width: 100%;  
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-top: 0;
+    width: 100%; 
+    padding: 18px;
+    font-size: 28px; 
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  
