@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: #ffffff;
+    font-family: sans-serif;
+
+}
+.Barra{
+    background-color: #0a35f1; 
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+}
+.Titulo-Pagina{
+    text-decoration: none;
+    position: absolute;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#Logo{
+    background-color: #afafaf;  
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 40px;
+    font-size: 16px;
+    margin: 1%;
+}
+.Nova-Tabela{
+    font-size:18px;
+    color:rgb(145, 145, 145);
+    margin: 20px 30px;
+}
