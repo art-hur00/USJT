@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    background: transparent;
+    color: inherit;
+}
 body{
     background-color: #ffffff;
     font-family: sans-serif;
@@ -36,7 +38,52 @@ body{
     margin: 1%;
 }
 .Nova-Tabela{
-    font-size:18px;
+    font-size:14px;
     color:rgb(145, 145, 145);
-    margin: 20px 30px;
+    margin: 10px 33px;
+}
+	    
+table{
+    border-collapse: collapse;
+    width: 68%;
+     margin: 2px auto;
+}
+th{
+    padding: 10px 10px 18px 7px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+td.id {
+    text-align: right;
+    padding: 10px 5px 15px 5px;
+    border: 1px solid #ccc;
+}
+td.descricao {
+    text-align: left;
+    padding: 10px 5px 15px 5px;
+    border: 1px solid #ccc;
+}
+  td.valor {
+    text-align: right;
+    padding: 10px 5px 15px 5px;
+    border: 1px solid #ccc;
+}
+  td.tipo{
+    text-align: left;
+    padding: 10px 5px 15px 5px;
+    border: 1px solid #ccc;
+}
+  td.acao{
+    padding: 10px 5px 15px 5px;
+    border: 1px solid #ccc;
+}
+td.data{
+    text-align: center;
+    padding: 10px 5px 15px 5px;
+    border: 1px solid #ccc;
+}
+td.hora{
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid #ccc;
 }
