@@ -106,7 +106,7 @@ td.hora, th.hora{
 .TotalDePagos{
     font-size:22px; 
     padding-left: 150px;
-    padding-right: 100px;
+    padding-right: 130px;
 }
 .TotalDeRecebidos{
     font-size:22px; 
@@ -154,7 +154,7 @@ td.hora, th.hora{
 .box-total-pagos input,
 .box-total-recebidos input,
 .box-saldo input{
-    width: 250px;         
+    width: 90%;         
     font-size: 20px;     
     padding: 10px; 
     box-sizing: border-box;
@@ -164,9 +164,10 @@ td.hora, th.hora{
     color: white;
     border: none;
     border-radius: 2px;
-    padding: 8px 80px;
-    font-size: 12px;
+    padding: 13px 70px;
+    font-size: 16px;
     margin: 1%;
     cursor: pointer;
-    margin-left: 20%;
+    margin-left: 2%;
+    white-space: nowrap;
 }
