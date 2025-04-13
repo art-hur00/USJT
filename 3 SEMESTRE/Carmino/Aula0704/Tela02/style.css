@@ -40,13 +40,14 @@ body{
 .Nova-Tabela{
     font-size:14px;
     color:rgb(145, 145, 145);
-    margin: 10px 18px;
+    margin: 10px 100px;
 }
 	    
 table{
     border-collapse: collapse;
-    width: 98%;
-     margin-left: 20px;
+    width: 85%;
+     margin: 0 auto;
+     max-width: 1200px;
      margin-bottom: 15px;
 }
 th{
@@ -54,59 +55,109 @@ th{
     border: 1px solid #ccc;
     text-align: left;
 }
-td.id {
+td.id, th.id {
+    width: 0.5%;
     text-align: right;
-    padding: 10px 5px 15px 25px;
+    padding: 10px 5px 15px 19px;
     border: 1px solid #ccc;
     font-size: 20px;
 }
-td.descricao {
+td.descricao, th.descricao {
+    width: 1.9%;
     text-align: left;
-    padding: 10px 1px 15px 5px;
+    padding: 10px 1px 15px 7px;
     border: 1px solid #ccc;
     font-size: 20px; 
 }
-  td.valor {
+  td.valor, th.valor{
+    width: 0.65%;
     text-align: right;
-    padding: 10px 1px 15px 5px;
+    padding: 10px 6px 15px 5px;
     border: 1px solid #ccc;
     font-size: 20px; 
 }
-  td.tipo{
+  td.tipo, th.tipo{
+    width: 0.1%;
     text-align: left;
     padding: 10px 1px 15px 5px;
     border: 1px solid #ccc;
     font-size: 20px; 
 }
-  td.acao{
-    padding: 10px 1px 15px 5px;
+  td.acao, th.acao{
+    width: 0.75%;
+    padding: 10px 1px 15px 4px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+td.data, th.data{
+    width: 0.4%;
+    text-align: center;
+    padding: 10px 14px 15px 14px;
     border: 1px solid #ccc;
     font-size: 20px; 
 }
-td.data{
+td.hora, th.hora{
+    width: 0.3%;
     text-align: center;
-    padding: 10px 1px 15px 5px;
-    border: 1px solid #ccc;
-    font-size: 20px; 
-}
-td.hora{
-    text-align: center;
-    padding: 1px 1px 1px 1px;
+    padding: 10px 10px 15px 10px;
     border: 1px solid #ccc;
     font-size: 20px; 
 }
 .TotalDePagos{
-    font-size:18px; 
-    padding-left: 70px;
-    padding-right: 40px;
+    font-size:22px; 
+    padding-left: 150px;
+    padding-right: 100px;
 }
 .TotalDeRecebidos{
-    font-size:18px; 
-    padding-left: 50px;
-    padding-right: 75px;
+    font-size:22px; 
+    padding-right: 150px;
 }
 .Saldo{
-    font-size: 18px; 
-    padding-left: 100px;
-    padding-right: 100px;
+    font-size: 22px; 
+}
+.acao-edit {
+    padding: 10px 1px 15px 5px;
+    border: none;
+    font-size: 20px; 
+    cursor: pointer;
+}
+.acao-edit:hover {
+    color: #0a35f1;
+  }
+  .acao-delete {
+    padding: 10px 1px 15px 5px;
+    border: none;
+    font-size: 20px; 
+    cursor: pointer;
+}
+.acao-delete:hover {
+    color: #0a35f1;
+  }
+.separate{
+    font-weight: bold;
+    font-size: 23px;
+    margin-right: -2px;
+    margin-left: 2px;
+}
+.list{
+    font-size: 19px;
+    font-weight: lighter;
+}
+.form-container {
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    
+}
+
+
+.box-total-pagos input,
+.box-total-recebidos input,
+.box-saldo input{
+    width: 250px;         
+    font-size: 20px;     
+    padding: 10px; 
+    box-sizing: border-box;
 }

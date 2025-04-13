@@ -16,22 +16,25 @@
     <div class ="Tabela">     
      <table>
             <tr>
-                <th>ID</th>
-                <th>Descrição</th>
-                <th>Data</th>
-                <th>Hora</th>
-                <th>Valor(R$)</th>
-                <th>Tipo</th>
-                <th>Ações</th>
+                <th class="list">ID</th>
+                <th class="list">Descrição</th>
+                <th class="list">Data</th>
+                <th class="list">Hora</th>
+                <th class="list">Valor(R$)</th>
+                <th class="list">Tipo</th>
+                <th class="list">Ações</th>
             </tr>
             <tr>
                       <td class = "id">1</td>
-                      <td class = "descricao">Compra de materia de escritorio</td>
+                      <td class = "descricao">Compra de material de escritório</td>
                       <td class = "data">08/12/2024</td>
                       <td class = "hora">14:00</td>
                       <td class = "valor">200,00</td>
                       <td class = "tipo">Pago</td>
-                      <td class = "acao">Editar | Deletar</td>  
+                       <td class="acao"><span class="acao-edit" acao="editar">Editar</span> 
+                        <span class="separate">|</span>
+                        <span class="acao-delete" acao="deletar">Deletar</span>
+                      </td>  
             </tr>   
             <tr>
                     <td class = "id">2</td>
@@ -40,7 +43,10 @@
                     <td class = "hora">12:23</td>
                     <td class = "valor">1500,00</td>
                     <td class = "tipo">Recebido</td>
-                    <td class = "acao">Editar | Deletar</td>  
+                    <td class="acao"><span class="acao-edit" acao="editar">Editar</span> 
+                        <span class="separate">|</span>
+                        <span class="acao-delete" acao="deletar">Deletar</span>
+                      </td>   
             </tr> 
             <tr>
                     <td class = "id">3</td>
@@ -49,7 +55,10 @@
                     <td class = "hora">10:30</td>
                     <td class = "valor">750,00</td>
                     <td class = "tipo">Pago</td>
-                    <td class = "acao">Editar | Deletar</td>  
+                    <td class="acao"><span class="acao-edit" acao="editar">Editar</span> 
+                        <span class="separate">|</span>
+                        <span class="acao-delete" acao="deletar">Deletar</span>
+                      </td>  
             </tr> 
             <tr>
                     <td class = "id">4</td>
@@ -58,7 +67,10 @@
                     <td class = "hora">09:45</td>
                     <td class = "valor">650,00</td>
                     <td class = "tipo">Recebido</td>
-                    <td class = "acao">Editar | Deletar</td>  
+                    <td class="acao"><span class="acao-edit" acao="editar">Editar</span> 
+                        <span class="separate">|</span>
+                        <span class="acao-delete" acao="deletar">Deletar</span>
+                      </td>  
             </tr> 
             <tr>
                     <td class = "id">5</td>
@@ -67,7 +79,10 @@
                     <td class = "hora">15:27</td>
                     <td class = "valor">1345,23</td>
                     <td class = "tipo">Pago</td>
-                    <td class = "acao">Editar | Deletar</td>  
+                    <td class="acao"><span class="acao-edit" acao="editar">Editar</span> 
+                        <span class="separate">|</span>
+                        <span class="acao-delete" acao="deletar">Deletar</span>
+                      </td>  
             </tr> 
             <tr>
                     <td class = "id">6</td>
@@ -76,24 +91,31 @@
                     <td class = "hora">12:30</td>
                     <td class = "valor">850,00</td>
                     <td class = "tipo">Pago</td>
-                    <td class = "acao">Editar | Deletar</td>  
+                    <td class="acao"><span class="acao-edit" acao="editar">Editar</span> 
+                        <span class="separate">|</span>
+                        <span class="acao-delete" acao="deletar">Deletar</span>
+                        </td> 
             </tr>
-       
-        </table>
-    </div>
+        </table></div>
 
     <label class ="TotalDePagos">Total de pagos</label>
     <label class ="TotalDeRecebidos">Total de recebidos</label>
     <label class ="Saldo">Saldo</label>
-    
-    <section claass="TotalDePagos">
-        <input type="TotalDePagos" id="TotalDePagos" required>
-     </section>
-     <section claass="TotalDeRecebidos">
-        <input type="TotalDeRecebidos" id="TotalDeRecebidos" required>
-     </section>
-     <section claass="Saldo">
-        <input type="Saldo" id="Saldo" required>
-     </section>
+  
+    <div class ="form-container">
+        <section class="box-total-pagos">
+            <input  id="TotalDePagos" required>
+        </section>
+        
+        <section class="box-total-recebidos">
+            <input  id="TotalDeRecebidos" required>
+        </section>
+        
+        <section class="box-saldo">
+            <input  id="Saldo" required>
+        </section>
+        
+        <script src="script.js"></script>
+    </div>   
 </body>
 </html>
