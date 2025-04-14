@@ -1,5 +1,8 @@
 https://www.w3schools.com/
 
+
+Github: Quarta
 https://github.com/mmamorim/SDM-2025-1-MANHA
 
-
+Github: Segunda
+https://github.com/aulassaojudas/frontend-livro-caixa

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de lançamentos</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="Barra">
+        <label class= "Titulo-Pagina">Livro Caixa</label> <!-- Título da Header -->
+        <button type="submit" id= "Logo">Logo</button> <!-- Logo -->
+    </div>
+
+    <h3 class="Nova-Tabela">Nova Tabela</h3> <!-- Título da Tabela -->
+
+    <!-- Tabela -->
+    <div class ="Tabela"> 
+    <table>
+        <tr> <!-- Linha 0 -->
+            <th class="list">ID</th> <!-- Coluna ID -->
+            <th class="list">Descrição</th> <!-- Coluna Descrição -->
+            <th class="list">Data</th> <!-- Coluna Data -->
+            <th class="list">Hora</th> <!-- Coluna Hora -->
+            <th class="list">Valor(R$)</th> <!-- Coluna Valor -->
+            <th class="list">Tipo</th> <!-- Coluna Tipo -->
+            <th class="list">Ações</th> <!-- Coluna Ações -->
+        </tr>
+        <tr> <!-- Linha 1 -->
+            <td class = "id">1</td>
+            <td class = "descricao">Compra de material de escritório</td>
+            <td class = "data">08/12/2024</td>
+            <td class = "hora">14:00</td>
+            <td class = "valor">200,00</td>
+            <td class = "tipo">Pago</td>
+            <td class="acao">
+                <span class="acao-edit" acao="editar">Editar</span> 
+                <span class="separate">|</span>
+                <span class="acao-delete">Deletar</span>
+            </td>
+        </tr>
+        <tr> <!-- Linha 2 -->
+            <td class = "id">2</td>
+            <td class = "descricao">Recebimento de cliente</td>
+            <td class = "data">08/12/2024</td>
+            <td class = "hora">12:23</td>
+            <td class = "valor">1500,00</td>
+            <td class = "tipo">Recebido</td>
+            <td class="acao">
+                <span class="acao-edit" acao="editar">Editar</span> 
+                <span class="separate">|</span>
+                <span class="acao-delete">Deletar</span>
+            </td>   
+        </tr>
+        <tr> <!-- Linha 3 -->
+            <td class = "id">3</td>
+            <td class = "descricao">Pagamento de cliente</td>
+            <td class = "data">07/05/2024</td>
+            <td class = "hora">10:30</td>
+            <td class = "valor">750,00</td>
+            <td class = "tipo">Pago</td>
+            <td class="acao">
+                <span class="acao-edit" acao="editar">Editar</span> 
+                <span class="separate">|</span>
+                <span class="acao-delete">Deletar</span>
+            </td>  
+        </tr>
+        <tr> <!-- Linha 4 -->
+            <td class = "id">4</td>
+            <td class = "descricao">Recebimento de cliente</td>
+            <td class = "data">07/05/2024</td>
+            <td class = "hora">09:45</td>
+            <td class = "valor">650,00</td>
+            <td class = "tipo">Recebido</td>
+            <td class="acao">
+                <span class="acao-edit" acao="editar">Editar</span> 
+                <span class="separate">|</span>
+                <span class="acao-delete">Deletar</span>
+            </td>  
+        </tr>
+        <tr> <!-- Linha 5 -->
+            <td class = "id">5</td>
+            <td class = "descricao">Pagamento de impostos</td>
+            <td class = "data">06/05/2024</td>
+            <td class = "hora">15:27</td>
+            <td class = "valor">1345,23</td>
+            <td class = "tipo">Pago</td>
+            <td class="acao">
+                <span class="acao-edit" acao="editar">Editar</span> 
+                <span class="separate">|</span>
+                <span class="acao-delete">Deletar</span>
+            </td>  
+        </tr>
+        <tr> <!-- Linha 6 -->
+            <td class = "id">6</td>
+            <td class = "descricao">Pagamento de emolumentos</td>
+            <td class = "data">06/05/2024</td>
+            <td class = "hora">12:30</td>
+            <td class = "valor">850,00</td>
+            <td class = "tipo">Pago</td>
+            <td class="acao">
+                <span class="acao-edit">Editar</span> 
+                <span class="separate">|</span>
+                <span class="acao-delete">Deletar</span>
+            </td> 
+        </tr>
+    </table>
+    </div>
+
+    <!-- Labels e Inputs -->
+    <section class="totais">
+        <div class="campo">
+            <label for="total-de-pagos">Total de pagos</label>
+            <input type="text" id="total-de-pagos" required>
+        </div>
+    
+        <div class="campo">
+            <label for="total-de-recebidos">Total de recebidos</label>
+            <input type="text" id="total-de-recebidos" required>
+        </div>
+    
+        <div class="campo">
+            <label for="Saldo">Saldo</label>
+            <input type="text" id="Saldo" required>
+        </div>
+
+        <div class="campo">
+            <button id="novo-lancamento" class="novo-lancamento">Novo Lançmento</button>
+        </div>
+    </section>
+
+    <!-- Tela de Novo Lançamento -->
+    <div id="tela-lancamento" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Novo Lançamento</h2>
+            
+            <div class="formulario">
+
+                <!-- Label e Input - Descrição -->
+                <div class="linha-formulario">
+                    <div class="campo-editar">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" id="descricao" placeholder="Descrição">
+                    </div>
+                </div>
+
+                <!-- Label e Input - Data / Label e Input - Hora -->
+                <div class="linha-formulario">
+                    <div class="campo-editar">
+                        <label for="data">Data</label>
+                        <input type="text" id="data" placeholder="dd/mm/aaaa">
+                    </div>
+                    <div class="campo-editar">
+                        <label for="hora">Hora</label>
+                        <input type="text" id="hora" placeholder="HH:MM">
+                    </div>
+                </div>
+
+                <!-- Label e Input - Valor / Checkboxes - Pago e Recebido -->
+                <div class="linha-formulario">
+                    <div class="campo-editar">
+                        <label for="valor">Valor</label>
+                        <input type="text" id="valor" placeholder="R$">
+                    </div>
+                    <div class="campo-checkboxes">
+                        <label><input type="checkbox" name="status" value="pago">Pago</label>
+                        <label><input type="checkbox" name="status" value="recebido">Recebido</label>
+                    </div>
+                </div>
+                
+
+                <!-- Botões de salvar e cancelar -->
+                <div class="modal-buttons">
+                    <button id="botao-confirmar" class="modal-button">Salvar</button>
+                    <button id="cancelar-lancamento" class="modal-button">Cancelar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Tela de Editar -->
+    <div id="tela-editar" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Editar</h2>
+            
+            <div class="formulario">
+
+                <!-- Label e Input - Descrição -->
+                <div class="linha-formulario">
+                    <div class="campo-editar">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" id="descricao" placeholder="Descrição">
+                    </div>
+                </div>
+
+                <!-- Label e Input - Data / Label e Input - Hora -->
+                <div class="linha-formulario">
+                    <div class="campo-editar">
+                        <label for="data">Data</label>
+                        <input type="text" id="data" placeholder="dd/mm/aaaa">
+                    </div>
+                    <div class="campo-editar">
+                        <label for="hora">Hora</label>
+                        <input type="text" id="hora" placeholder="HH:MM">
+                    </div>
+                </div>
+
+                <!-- Label e Input - Valor / Checkboxes - Pago e Recebido -->
+                <div class="linha-formulario">
+                    <div class="campo-editar">
+                        <label for="valor">Valor</label>
+                        <input type="text" id="valor" placeholder="R$">
+                    </div>
+                    <div class="campo-checkboxes">
+                        <label><input type="checkbox" name="status" value="pago">Pago</label>
+                        <label><input type="checkbox" name="status" value="recebido">Recebido</label>
+                    </div>
+                </div>
+                
+
+                <!-- Botões de salvar e cancelar -->
+                <div class="modal-buttons">
+                    <button id="botao-confirmar" class="modal-button">Salvar</button>
+                    <button id="cancelar-editar" class="modal-button">Cancelar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Tela de Excluir -->
+    <div id="tela-excluir" class="modal">
+        <div class="modal-content">
+            
+            <!-- Título e mensagem -->
+            <h2 class="modal-title">Excluir</h2>
+            <p class="modal-message">Você têm certeza de excluir este registro?</p>
+            
+            <!-- Botões de confirmar e cancelar -->
+            <div class="modal-buttons">
+                <button id="botao-confirmar" class="modal-button">Sim</button>
+                <button id="cancelar-excluir" class="modal-button">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
