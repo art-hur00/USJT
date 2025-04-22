@@ -1,0 +1,4 @@
+--Tomando por base o contexto apresentado e utilizando os termos técnicos adequados, explique o que é o JSON e para que serve.
+
+
+    --O JSON (JavaScript Object Notation) é um formato leve de serialização de dados, fundamental para o desenvolvimento de aplicações web modernas, APIs RESTful e sistemas distribuídos. Ele atua como uma linguagem de intercâmbio de dados, oferecendo ampla interoperabilidade entre diversas linguagens de programação, além de ser de fácil compreensão e manipulação.

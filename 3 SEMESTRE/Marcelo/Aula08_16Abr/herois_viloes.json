@@ -1,0 +1,151 @@
+{
+    "herois": [
+      {
+        "nome": "Homem-Aranha",
+        "nome_na_vida_real": "Peter Park",
+        "superpoderes": [
+          {
+            "nome": "soltar teia",
+            "poder": 3
+          },
+          {
+            "nome": "andar em paredes",
+            "poder": 2
+          },
+          {
+            "nome": "sentido apurado",
+            "poder": 1
+          }
+        ]
+      },
+      {
+        "nome": "Super-Homem",
+        "nome_na_vida_real": "Clark Kent",
+        "superpoderes": [
+          {
+            "nome": "voar",
+            "poder": 3
+          },
+          {
+            "nome": "força",
+            "poder": 5
+          },
+          {
+            "nome": "visão de raio X",
+            "poder": 4
+          },
+          {
+            "nome": "sopro congelante",
+            "poder": 4
+          }
+        ]
+      },
+      {
+        "nome": "Capitão América",
+        "nome_na_vida_real": "Steven Rogers",
+        "superpoderes": [
+          {
+            "nome": "supersoldado",
+            "poder": 3
+          },
+          {
+            "nome": "escudo",
+            "poder": 3
+          }
+        ]
+      },
+      {
+        "nome": "Flash",
+        "nome_na_vida_real": "Barry Allen",
+        "superpoderes": [
+          {
+            "nome": "velocidade",
+            "poder": 5
+          }
+        ]
+      },
+      {
+        "nome": "Lanterna-Verde",
+        "nome_na_vida_real": "Hal Jordan",
+        "superpoderes": [
+          {
+            "nome": "anel mágico",
+            "poder": 5
+          }
+        ]
+      },
+      {
+        "nome": "Homem de Ferro",
+        "nome_na_vida_real": "Tony Stark",
+        "superpoderes": [
+          {
+            "nome": "armadura",
+            "poder": 4
+          },
+          {
+            "nome": "dispositivos eletrônicos",
+            "poder": 2
+          }
+        ]
+      }
+    ],
+    "viloes": [
+      {
+        "nome": "Duende Verde",
+        "nome_na_vida_real": "Norman Osbourne",
+        "superpoderes": [
+          {
+            "nome": "força",
+            "poder": 5
+          }
+        ]
+      },
+      {
+        "nome": "Lex Luthor",
+        "nome_na_vida_real": "Lex Luthor",
+        "superpoderes": [
+          {
+            "nome": "mente aguçada",
+            "poder": 5
+          }
+        ]
+      },
+      {
+        "nome": "Bizarro",
+        "nome_na_vida_real": "Bizarro",
+        "superpoderes": [
+          {
+            "nome": "voar",
+            "poder": 3
+          },
+          {
+            "nome": "força",
+            "poder": 5
+          },
+          {
+            "nome": "visão de raio X",
+            "poder": 4
+          },
+          {
+            "nome": "sopro congelante",
+            "poder": 4
+          }
+        ]
+      },
+      {
+        "nome": "Octopus",
+        "nome_na_vida_real": "Otto Octavius",
+        "superpoderes": [
+          {
+            "nome": "tentáculos indestrutíveis",
+            "poder": 5
+          },
+          {
+            "nome": "velocidade",
+            "poder": 1
+          }
+        ]
+      }
+    ]
+  }
+  
