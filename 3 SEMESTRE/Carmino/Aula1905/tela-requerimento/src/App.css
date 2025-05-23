@@ -1,0 +1,87 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.cont-esq, .cont-dir {
+  width: 45%;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.label-box {
+  background-color: #0d6fd8;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  min-width: 100px;
+  text-align: left;
+  border-radius: 0;
+}
+
+input {
+  background-color: #0d6fd8;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  min-width: 100px;
+  text-align: left;
+  border-radius: 0;
+}
+
+.Botoes {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: #0d6fd8;
+  color: white;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0d6fd8;
+}
+
+.cont-dir ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cont-dir li {
+  background-color: #0d6fd8;
+  color: white;
+  margin: 5px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background:  white;
+  padding: 30px;
+  border-radius: 0;
+  text-align: center;
+}
+
+
