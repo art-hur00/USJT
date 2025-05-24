@@ -38,8 +38,6 @@ const App: React.FC = () => {
     if (acao === 'excluir' && id) {
       const convidado = convidados.find(c => c._id === id);
       if (convidado) setFormData(convidado);
-    } else if (acao === 'novo') {
-      setFormData({ nome: '', endereco: '', cidade: '' });
     }
 
     setModalVisible(true);
@@ -64,23 +62,23 @@ const App: React.FC = () => {
         await fetch(endpointBase, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(semId)
+          body: JSON.stringify(semId),
         });
       } else if (acaoAtual === 'editar' && idAtual) {
         const { _id, ...dadosSemId } = formData;
         await fetch(`${endpointBase}/${idAtual}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(dadosSemId)
+          body: JSON.stringify(dadosSemId),
         });
       } else if (acaoAtual === 'excluir' && idAtual) {
         await fetch(`${endpointBase}/${idAtual}`, {
-          method: 'DELETE'
+          method: 'DELETE',
         });
       }
 
       await carregarLista();
-      setFormData({ nome: '', endereco: '', cidade: '' });
+      setFormData({ nome: '', endereco: '', cidade: '' }); // Limpa só depois de salvar
       fecharModal();
     } catch (error) {
       console.error('Erro na operação:', error);
@@ -124,28 +122,8 @@ const App: React.FC = () => {
 
         <div className="Botoes">
           <button onClick={() => abrirModal('novo')}>Novo</button>
-          <button
-            onClick={() => {
-              if (!formData._id) {
-                alert('Selecione um convidado para editar!');
-                return;
-              }
-              abrirModal('editar', formData._id);
-            }}
-          >
-            Editar
-          </button>
-          <button
-            onClick={() => {
-              if (!formData._id) {
-                alert('Selecione um convidado para excluir!');
-                return;
-              }
-              abrirModal('excluir', formData._id);
-            }}
-          >
-            Excluir
-          </button>
+          <button onClick={() => abrirModal('editar', formData._id || '')}>Editar</button>
+          <button onClick={() => abrirModal('excluir', formData._id || '')}>Excluir</button>
         </div>
       </div>
 
@@ -153,11 +131,7 @@ const App: React.FC = () => {
         <h3>Lista de clientes</h3>
         <ul>
           {convidados.map((c) => (
-            <li
-              key={c._id}
-              onClick={() => setFormData(c)}
-              style={{ cursor: 'pointer', marginBottom: '5px' }}
-            >
+            <li key={c._id} onClick={() => setFormData(c)}>
               {c.nome} ({c.cidade})
             </li>
           ))}
@@ -181,6 +155,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 
 
 
