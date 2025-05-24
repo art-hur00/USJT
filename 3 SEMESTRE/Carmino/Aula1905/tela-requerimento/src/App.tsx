@@ -8,7 +8,7 @@ interface Convidado {
   cidade: string;
 }
 
-const endpointBase = 'https://crudcrud.com/api/44ed57aab4ae415a92e3553444f98d6d/convidados'; // Substitua com seu novo endpoint válido do crudcrud
+const endpointBase = 'https://crudcrud.com/api/7b9e2d02bd1b4fcea2cd427d479ee37c/convidados';
 
 const App: React.FC = () => {
   const [convidados, setConvidados] = useState<Convidado[]>([]);
@@ -35,11 +35,11 @@ const App: React.FC = () => {
     setAcaoAtual(acao);
     setIdAtual(id);
 
-    if (acao === 'novo') {
-      setFormData({ nome: '', endereco: '', cidade: '' });
-    } else if ((acao === 'editar' || acao === 'excluir') && id) {
+    if (acao === 'excluir' && id) {
       const convidado = convidados.find(c => c._id === id);
       if (convidado) setFormData(convidado);
+    } else if (acao === 'novo') {
+      setFormData({ nome: '', endereco: '', cidade: '' });
     }
 
     setModalVisible(true);
@@ -48,17 +48,23 @@ const App: React.FC = () => {
   const fecharModal = () => {
     setModalVisible(false);
     setAcaoAtual(null);
-    setFormData({ nome: '', endereco: '', cidade: '' });
     setIdAtual('');
   };
 
   const salvar = async () => {
     try {
+      const { nome, endereco, cidade } = formData;
+      if (!nome || !endereco || !cidade) {
+        alert('Preencha todos os campos antes de salvar.');
+        return;
+      }
+
       if (acaoAtual === 'novo') {
+        const { _id, ...semId } = formData;
         await fetch(endpointBase, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
+          body: JSON.stringify(semId)
         });
       } else if (acaoAtual === 'editar' && idAtual) {
         const { _id, ...dadosSemId } = formData;
@@ -74,6 +80,7 @@ const App: React.FC = () => {
       }
 
       await carregarLista();
+      setFormData({ nome: '', endereco: '', cidade: '' });
       fecharModal();
     } catch (error) {
       console.error('Erro na operação:', error);
@@ -83,13 +90,13 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <div className="cont-esq">
-        <div className="campo">
-          <div className="label-box">ID</div>
+        <div className="form-field">
+          <label>ID</label>
           <input type="text" value={formData._id || ''} readOnly />
         </div>
 
-        <div className="campo">
-          <div className="label-box">Nome</div>
+        <div className="form-field">
+          <label>Nome</label>
           <input
             type="text"
             value={formData.nome}
@@ -97,8 +104,8 @@ const App: React.FC = () => {
           />
         </div>
 
-        <div className="campo">
-          <div className="label-box">Endereço</div>
+        <div className="form-field">
+          <label>Endereço</label>
           <input
             type="text"
             value={formData.endereco}
@@ -106,8 +113,8 @@ const App: React.FC = () => {
           />
         </div>
 
-        <div className="campo">
-          <div className="label-box">Cidade</div>
+        <div className="form-field">
+          <label>Cidade</label>
           <input
             type="text"
             value={formData.cidade}
@@ -117,8 +124,28 @@ const App: React.FC = () => {
 
         <div className="Botoes">
           <button onClick={() => abrirModal('novo')}>Novo</button>
-          <button onClick={() => abrirModal('editar', formData._id || '')}>Editar</button>
-          <button onClick={() => abrirModal('excluir', formData._id || '')}>Excluir</button>
+          <button
+            onClick={() => {
+              if (!formData._id) {
+                alert('Selecione um convidado para editar!');
+                return;
+              }
+              abrirModal('editar', formData._id);
+            }}
+          >
+            Editar
+          </button>
+          <button
+            onClick={() => {
+              if (!formData._id) {
+                alert('Selecione um convidado para excluir!');
+                return;
+              }
+              abrirModal('excluir', formData._id);
+            }}
+          >
+            Excluir
+          </button>
         </div>
       </div>
 
@@ -126,7 +153,11 @@ const App: React.FC = () => {
         <h3>Lista de clientes</h3>
         <ul>
           {convidados.map((c) => (
-            <li key={c._id} onClick={() => setFormData(c)}>
+            <li
+              key={c._id}
+              onClick={() => setFormData(c)}
+              style={{ cursor: 'pointer', marginBottom: '5px' }}
+            >
               {c.nome} ({c.cidade})
             </li>
           ))}
@@ -136,8 +167,11 @@ const App: React.FC = () => {
       {modalVisible && (
         <div className="modal">
           <div className="modal-content">
-            <h3>Confirmar {acaoAtual?.toUpperCase()}?</h3>
-            <button onClick={salvar}>Salvar</button>
+            <h3>Deseja confirmar a ação: {acaoAtual?.toUpperCase()}?</h3>
+            <p>Nome: {formData.nome}</p>
+            <p>Endereço: {formData.endereco}</p>
+            <p>Cidade: {formData.cidade}</p>
+            <button onClick={salvar}>Confirmar</button>
             <button onClick={fecharModal}>Cancelar</button>
           </div>
         </div>
@@ -147,8 +181,6 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-
 
 
 
