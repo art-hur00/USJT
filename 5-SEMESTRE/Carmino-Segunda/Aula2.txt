@@ -1,0 +1,111 @@
+-------------------IA e Redes neurais -------------------
+
+Fonte: Univesp(Universidade Virtual do Estado de São Paulo)
+
+
+IA:
+"Ramo da pesquisa de Ciência da Computação que tem como objetio desenvolver tecnologias que simulem a inteligência humana, como raciocínio, aprendizagem, linguagem,inferêrencia e criatividade"
+						--Dicionário
+
+Teste de Turing:
+->Teste para avaliar se uma máquina possui Inteligência Artificial.
+
+-> Um entrevistador humano deve entrevistar dois entrevistados, uma máquina e um humano. Caso o entrevistador não saiba diferenciar os entrevistados então a máquina é uma inteligência artificial
+
+->IAs devem poder Perceber, Raciocinar, Atuar e Aprender
+
+IAs x Machine Learning
+
+-->Machine Learning é uma sub-area de IA, que estuda metódos de ensinamento/treinamento de modelos de IA.
+
+Definição Machine Learning:
+	Um programa é considerado um sistema de aprendizado de máquina se ele é capaz de aprender com experiência E, com respeito a uma classe de tarefa T, se a sua performace, medida por P,melhora com a experiência E.
+					Mitchell(1997)
+
+
+Abordagens para o aprendizado de máquina:
+-Árvore de decisão
+-Sistemas baseados em regras
+-Métodos probabilísticos
+-Métoos simbólicos
+-Redes Neurais,etc.
+_______________________________________________________________________________
+
+__Redes Neurais__
+
+O que são?
+
+São modelos(redes) computacionais inspirados na estrutura e no funcionamento do sistema nervoso.
+
+->O conhecimento é adquirido a partir do processo de aprendizagem.
+->O conhecimento é armazenado nos pesos da rede.
+
+-> As redes neurais podem ser vistas como estruturas distribuídas compostas por um grande número de unidades simples(neurônios)
+
+|--> Existem diversos tipos de RNs
+
+_______________________________________________________________________________
+
+Tarefas onde redes neurais são muito utilizadas:
+-Reconhecimento de padrões:
+
+Entrada --> Extração de características --> classificação de Dados
+
+-Aproximação de funções:
+Redes neurais conseguem aproximar uma função a partir de dados coletados de outra função já conhecida de forma eficiente. 
+
+-Filtragem adaptativa
+
+-Tradução
+
+-Detecção de fraudes
+
+-Geração ed moléculas
+
+-Veículos autônomos.
+
+_______________________________________________________________________________
+O funcionamento do cérebro humano:
+
+Estímulo --> Receptoress <--> Rede neural <--> Atuadores --> Resposta
+
+-Tem aproximadamente 100 bilhões de neurônios
+-Novas conexões podem ser criadas ou desfeitas(plasticidade)
+-Diversas regiões especializadas
+-Alta eficiência energética
+-Capaz de resolver problemas complexos.
+
+_______________________________________________________________________________
+
+Representação via grafos:
+
+-> Fornece uma descrição funcional dos vários elementos que constituem o modelo de um neurônio aritificial.
+_______________________________________________________________________________
+
+Arquiteturas de RN:
+
+Redes com camada única.
+->Redes alimentadas adiante com camada única, fluxo único: entrada -> saída
+
+Redes com múltiplas camadas
+->É uma generalização das redes com camada única, o fluxo se permanece o mesmo, uma entrada que leva para uma saída, porém com com camadas entre estas camadas:Entrada --> Saída --> Entrada --> saída --> Entrada --> Saída.
+Cada entrada com saída representa uma camada.
+
+Redes recorrentes.
+->Possui laços de realimentação
+->Sinal da rede depende da entrada, e do estado anterior a entrada
+
+Redes Construtivas
+->Número de neurônios varia durante o treinamento
+
+Redes Convolucionais
+->Número com conectividade local.
+
+Combinação de arquitura
+-Combinação de redes convolucionais com redes recorrentes
+
+
+
+
+
+
