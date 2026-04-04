@@ -1,0 +1,19 @@
+Ao aceitarmos as duas premissas: que o cérebro tem em grande parte uma componente de processamento de símbolos, e que há em grande parte uma independência do “software” em relação ao “hardware”, isto é, que podemos discutir 
+as questões de processamento de símbolos do cérebro sem fazer necessariamente apelo às operações orgânicas que as suportam, então podemos encontrar no computador uma fonte nova de metáforas, que inclusive reconciliam a 
+visão do determinismo material com a visão mentalista teleológica. De facto, 
+o computador veio elucidar um problema filosófico de sempre, o da interacção 
+corpo-mente (o “mind-body problem”), em todas as suas versões monistas ou 
+dualistas, com ou sem interacção, com ou sem epifenómenos, etc., porque reconcilia aquelas duas visões: cada uma é afinal um ponto de vista, uma descrição da mesma coisa.
+
+A finalizar esta secção seria bom referir quais as diferenças entre a inteligência natural e a artificial, tal como as concebemos hoje em dia. Primeiro, o cérebro é susceptível de regimes de trabalho que não são do tipo tudo ou nada como 
+o computador. O cérebro pode estar ébrio, pode estar alucinado, ou com sono, 
+e isso corresponde a regimes de funcionamento que têm um nexo próprio, ao 
+passo que o computador não. O computador ou funciona num único modo bem 
+caracterizado, ou não está funcionando de todo, isto é, o funcionamento que 
+exibe então não faz sentido quanto ao que dele se pretende. Adicionalmente, o 
+cérebro tem grandes capacidades de paralelismo, como é sabido, e só hoje em 
+dia se começam a explorar computadores com tais capacidades
+
+Por fim, o cérebro tem a característica de ser autoprogramável, isto é, tem um 
+sistema motivacional e uma consciência reflexiva com capacidade de em grande medida controlar todo o seu funcionamento, e mesmo de suprir ou superar 
+mecanismos nervosos de nível mais baixo

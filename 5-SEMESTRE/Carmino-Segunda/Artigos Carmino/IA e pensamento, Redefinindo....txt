@@ -1,0 +1,53 @@
+Resumo do Artigo Inteligência artificial e pensamento: redefinindo os parâmetros da questão principal de Turing.
+
+Teste de Turing:
+Turing propõe uma forma de válidar se uma máquina é inteligente ou não, pelo jogo de advinhação. Nesta proposta um humano fará perguntas e
+receberá respostas de uma máquina e de outro humano. O intuito do jogo é que o humano que fará as perguntas possa advinhar se quem responde é uma máquina ou não,
+caso ele tenha dificuldade, ou erre, a máquina é inteligente, e um ser pensante(Pág.209).
+
+O teste de turing foi fundamental para o desenvolvimento da ciência cognitiva.Primeiramente, seu teste estabeleceu, mesmo que indiretamente, a independência 
+entre a estrutura material da máquina (o hardware) e sua função (o software).(Pág.209).
+
+O segundo motivo que justifica a grande influência de Turing na ciência cognitiva 
+está em sua definição clara e precisa sobre o que é o pensamento: pensar é processar 
+informações a ponto de conseguir resolver problemas.(Pág.210.)
+
+Máquina de Turing:
+Turing (1950) também discorreu sobre o funcionamento de sua máquina. A hipotética
+máquina de Turing seria constituída por uma fita de dados de tamanho infinito, mas de 
+estados finitos (“finite state machine”); por um processador de informações; e por um 
+cabeçote capaz de ler, apagar e escrever informações na fita, além de poder movimentá-la. A 
+máquina seria capaz de processar informações serialmente, com “memória” capaz de recordar 
+qual a função do símbolo que está inscrito na fita e qual o estado da máquina no momento da 
+leitura, podendo, assim, determinar a próxima ação (que é efetivada pelo cabeçote) e, 
+consequentemente, o próximo estado finito da máquina (que está inscrito na fita). A 
+universalidade da máquina de Turing consiste na possibilidade de imputar nela qualquer 
+algoritmo, não havendo, assim, ao menos em princípio, limites para os tipos de processos que 
+ela poderia instanciar. A máquina de Turing acabou por instituir o padrão de funcionamento 
+de todas as máquinas digitais que conhecemos.(Pág.210)
+
+A força do teste de Turing, por sua vez, está em não estabelecer barreiras, 
+isto é, não deve haver regras que limitem tanto o modus operandi da máquina quanto as 
+perguntas (i.e., os problemas) que a ela poderiam ser apresentadas. (Pág.211)
+
+
+Nesse contexto, Johnson-Laird (2004b) desenvolveu a teoria dos modelos mentais. A 
+idéia básica dessa teoria é que as pessoas utilizam o conhecimento geral que possuem do 
+mundo para construir modelos mentais dos possíveis estados de coisas desse mundo. Ou seja, 
+cria-se, pelos modelos mentais, um mundo hipotético onde a pessoa testa suas decisões antes 
+de aplicá-las no mundo real.(Pág.212)
+
+
+. Mas o problema, mesmo assim, permanece. Mesmo se as máquinas 
+fossem capazes de rever todo o seu “conhecimento” e colocar todas as suas “crenças” à prova, 
+elas não poderiam modificar sua estrutura lógica de pensamento. O processo de revisão dos 
+conteúdos e de reestruturação das estratégias de raciocínio, por sua vez, é uma característica 
+essencial do pensamento humano e a impossibilidade de simulá-lo em máquinas sugere a 
+conclusão pessimista de que as máquinas não poderão pensar tal como os homens(Pág.214)
+
+A questão mais importante, todavia, reside no fato de que não há normatividade nos 
+processos de pensamento. Não há regras para a resolução de problemas, ou melhor, nas 
+palavras de Johnson-Laird (2002), não há algoritmos.(Pág.214)
+
+Ao passo em que ofereceu uma definição operacional precisa de pensamento, o erro 
+crucial de Turing foi não abandonar o antropocentrismo em seu teste(Pág.215)

@@ -73,6 +73,7 @@ while True:
         print("\nSua pontuação final é ", pontuacao, "\nParabéns!")
         break
 
+
 #Construi este software usando loops (while),e condicionais como if e match case. Utilizei lowe,random.choice como métodos e a biblioteca random.
 #Começei o código com o import, e com um print onde expliquei as regras, e como funciona o jogo Pedra, Papel e Tesoura. Depois iniciei uma condicional if para que o jogo em sí só começe quando o usuário 
 #digitar se quer ou não entrar no jogo(Por efeito cômico ambas as opções levam para o começo do jogo). Declaro a variável 'pontuacao' fora do loop while para que a mesma não seja declarada zero toda a vez que o loop se reinicie,
